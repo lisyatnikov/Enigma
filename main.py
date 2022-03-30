@@ -1,12 +1,20 @@
+#
+#
 
+from tkinter import*
 
-from tkinter import *
+root=Tk()
+root.title("Gui Puthon")
+root.geometry("600x400")
 
-root = Tk()
-root.title("GUI на Python")
-root.geometry("300x250")
+btn=Button(text="Hello",
+           background="#555",
+           foreground="#ccc",
+           padx="20",
+           pady="8",
+           font="16"
+           )
 
-btn = Button(text="Hello")
 btn.pack()
 
 root.mainloop()
