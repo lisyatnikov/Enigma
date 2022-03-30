@@ -1,7 +1,10 @@
 from tkinter import *
 
 root = Tk()
-root.title("Графическая программа на Python")
-root.geometry("400x300")
+root.title("GUI на Python")
+root.geometry("300x250")
+
+btn = Button(text="Hello")
+btn.pack()
 
 root.mainloop()
