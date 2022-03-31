@@ -3,6 +3,13 @@
 
 from tkinter import*
 
+clicks=0
+
+def click_button():
+    global clicks
+    clicks=clicks+1
+    root.title("Clicks {}".format(clicks))
+
 root=Tk()
 root.title("Gui Puthon")
 root.geometry("600x400")
@@ -12,7 +19,8 @@ btn=Button(text="Hello",
            foreground="#ccc",
            padx="20",
            pady="8",
-           font="16"
+           font="16",
+           command=click_button
            )
 
 btn.pack()
