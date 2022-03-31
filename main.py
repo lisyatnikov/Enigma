@@ -8,7 +8,7 @@ clicks=0
 def click_button():
     global clicks
     clicks=clicks+1
-    root.title("Clicks {}".format(clicks))
+    btn.config(text="Clicks {}".format(clicks))
 
 root=Tk()
 root.title("Gui Puthon")
